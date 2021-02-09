@@ -4633,9 +4633,9 @@ color: var(--main-theme-color);
     -o-border-radius: 30px;
 }
 
-#contact-us-right input {
+/*#contact-us-right input {
     padding: 25px 20px;
-}
+}*/
 
 .cntct-grp {
     margin-bottom: 30px;

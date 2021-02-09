@@ -114,7 +114,7 @@ $(document).ready(function () {
             document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour));
             document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute));
             document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
-        }, seconds)
+        }, second)
 
 });
 
@@ -244,5 +244,5 @@ $(document).ready(function () {
         $(this).tab('show');
     });
 });
-document.getElementById("defaultOpen").click();
+// document.getElementById("defaultOpen").click();
 
