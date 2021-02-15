@@ -92,11 +92,18 @@
 
                 <div class="col-8 col-sm-8 col-md-6 col-lg-6">
                     <div id="contact-us-right">
-                        <form id="myForm" class="layui-form" action="">
+                        <form id="myForm" class="layui-form" action="/services/physicalExamination/submit">
                             <div class="layui-form-item">
                                 <label for="name" class="layui-form-label">姓名：</label>
                                 <div class="layui-input-block">
                                     <input type="text" id="name" name="name" required  lay-verify="required"
+                                           placeholder="请输入姓名" autocomplete="off" class="layui-input">
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label for="studentId" class="layui-form-label">学号：</label>
+                                <div class="layui-input-block">
+                                    <input type="text" id="studentId" name="studentId" required  lay-verify="required"
                                            placeholder="请输入姓名" autocomplete="off" class="layui-input">
                                 </div>
                             </div>
@@ -114,7 +121,7 @@
                                         <option value="6">6 岁</option>
                                     </select>
                                 </div>
-                                <div class="layui-form-item">
+                                <div class="layui-form-item" style="margin-top: 15px;">
                                     <label class="layui-form-label">性别：</label>
                                     <div class="layui-input-block">
                                         <input type="radio" name="gender" value="男" title="男">
