@@ -41,10 +41,11 @@
     #why-we-are-right-media img {
         height: 100%;
     }
+
     .why-we-are-left-wrapper {
         width: 73%;
     }
-    
+
 
 }
 
@@ -52,6 +53,7 @@
     .blog-share li {
         padding: 10px 20px;
     }
+
     .about-bg-img1 {
         top: 10%;
         left: 5%;
@@ -141,9 +143,10 @@
 
 
 @media (max-width: 991px) {
-    #details-right-search{
+    #details-right-search {
         margin-top: 40px;
     }
+
     .td {
         bottom: 0;
         width: 100%;
@@ -264,7 +267,7 @@
         padding: 10px 22px;
     }
 
-    .course-info-text .list-inline>li {
+    .course-info-text .list-inline > li {
         font-size: 10px;
     }
 
@@ -383,7 +386,7 @@
 
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
     .nav-list {
         display: block !important;
     }
@@ -392,11 +395,13 @@
 @media (max-width: 767px) {
     .stats-content {
         display: inherit;
-        }
-        .stats-item {
-            border-right: none;
-            margin-top: 20px;
-        }
+    }
+
+    .stats-item {
+        border-right: none;
+        margin-top: 20px;
+    }
+
     .top-bar-left {
         display: block;
         text-align: center;
@@ -644,17 +649,20 @@
 }
 
 @media (max-width: 575px) {
-    .top-bar-left{
+    .top-bar-left {
         display: none;
     }
+
     .event-inner-area {
         min-height: auto;
         padding-left: 0;
     }
+
     .event-img-area {
         position: inherit;
         left: 0;
     }
+
     .call-bg-img1 {
         display: none;
     }
@@ -798,7 +806,6 @@
     /* .event-bg-img6-index2 {
         display: none;
     } */
-
     .btn-blogs {
         padding: 8px 10px;
     }
@@ -948,27 +955,34 @@
         -ms-border-radius: 0;
         -o-border-radius: 0;
     }
+
     .about-list ul li {
         display: block;
     }
+
     .course-info {
         display: block;
     }
+
     .publish-info {
         justify-content: start;
         padding: 10px 0;
     }
+
     .recent-post-tabs {
         display: flex;
         justify-content: start;
         padding: 10px 10px;
     }
+
     .course-info-tabs {
         margin: 20px 0 0 0;
     }
+
     .nav-tabs li {
         flex: 1 1 30%;
     }
+
     .event-bg-img6-index2 {
         display: none;
     }

@@ -163,7 +163,7 @@ $('.class-details-slider').owlCarousel({
 var $iframe = $('iframe'),
     $videoLink = $('.video-link'),
     playerTemplate =
-    '<div class="player"><div class="player__video"><div class="video-filler"></div><button class="video-close">&times;</button><iframe class="video-iframe" src="{{iframevideo}}" frameborder="0" allowfullscreen></iframe></div><div/>';
+        '<div class="player"><div class="player__video"><div class="video-filler"></div><button class="video-close">&times;</button><iframe class="video-iframe" src="{{iframevideo}}" frameborder="0" allowfullscreen></iframe></div><div/>';
 
 $videoLink.on('click', function (e) {
     var localTemplate = '',
