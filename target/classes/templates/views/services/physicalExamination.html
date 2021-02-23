@@ -8,8 +8,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <!--Title-->
     <title>体质检测-在线测试</title>
-
+    <link rel="stylesheet" href="/layui/css/layui.css">
+    <link rel="stylesheet" href="/layui/css/layui.mobile.css">
 </head>
+
+<style>
+    .layui-input {
+        border: 1px solid #882ff6;
+        -webkit-border-radius: 30px;
+        padding: 20px 20px;
+        width: 80%;
+    }
+    .layui-form-label {
+        width: 30%;
+        text-align: left;
+    }
+    .layui-form-select .layui-edge {
+        right: 55px;
+    }
+</style>
 
 <body>
     <!--header-->
@@ -72,46 +89,100 @@
                     </div>
                 </div>
                 <!--Right Side-->
-                <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+
+                <div class="col-8 col-sm-8 col-md-6 col-lg-6">
                     <div id="contact-us-right">
-                        <form action="#!">
-                            <div class="row">
-                                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                                    <div class="form-group cntct-grp">
-                                        <input type="text" class="form-control contact-form" placeholder="姓名" required="">
-                                    </div>
+                        <form id="myForm" class="layui-form" action="/services/physicalExamination/submit">
+                            <div class="layui-form-item">
+                                <label for="name" class="layui-form-label">姓名：</label>
+                                <div class="layui-input-block">
+                                    <input type="text" id="name" name="name" required  lay-verify="required"
+                                           placeholder="请输入姓名" autocomplete="off" class="layui-input">
                                 </div>
-                                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                                    <div class="form-group cntct-grp">
-                                        <input type="text" class="form-control contact-form"
-                                               placeholder="性别" required="">
-                                    </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label for="age" class="layui-form-label">年龄：</label>
+                                <div class="layui-input-block">
+                                    <select id="age" name="age" lay-verify="required" class="layui-input">
+                                        <option value="">请选择</option>
+                                        <option value="3">3 岁</option>
+                                        <option value="3.5">3.5 岁</option>
+                                        <option value="4">4 岁</option>
+                                        <option value="4.5">4.5 岁</option>
+                                        <option value="5">5 岁</option>
+                                        <option value="5.5">5.5 岁</option>
+                                        <option value="6">6 岁</option>
+                                    </select>
                                 </div>
-                                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                                    <div class="form-group cntct-grp">
-                                        <input type="text" class="form-control contact-form" placeholder="年龄"
-                                               required="">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                                    <div class="form-group cntct-grp">
-                                        <input type="text" class="form-control contact-form" placeholder="身高"
-                                               required="">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                                    <div class="form-group cntct-grp">
-                                        <input type="text" class="form-control contact-form" placeholder="体重"
-                                               required="">
+                                <div class="layui-form-item" style="margin-top: 15px;">
+                                    <label class="layui-form-label">性别：</label>
+                                    <div class="layui-input-block">
+                                        <input type="radio" name="gender" value="男" title="男">
+                                        <input type="radio" name="gender" value="女" title="女">
                                     </div>
                                 </div>
                             </div>
-    <!--                        <div class="form-group cntct-grp">
-                                    <textarea rows="4" name="message" class="form-control contact-form" placeholder="Your Message"
-                                              required=""></textarea>
-                            </div>-->
-                            <div class="contact-us-btn text-center">
-                                <button type="submit" class="btn btn-general btn-about">提交</button>
+                            <div class="layui-form-item">
+                                <label for="height" class="layui-form-label">身高（cm）：</label>
+                                <div class="layui-input-block">
+                                    <input type="number" id="height" name="height" required  lay-verify="required"
+                                           placeholder="请输入身高" autocomplete="off" class="layui-input" min="0">
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label for="weight" class="layui-form-label">体重（kg）：</label>
+                                <div class="layui-input-block">
+                                    <input type="number" id="weight" name="weight" required  lay-verify="required"
+                                           placeholder="请输入体重" autocomplete="off" class="layui-input" min="0">
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label for="turnBackRun" class="layui-form-label">10米折返跑（s）：</label>
+                                <div class="layui-input-block">
+                                    <input type="number" id="turnBackRun" name="turnBackRun" required  lay-verify="required"
+                                           placeholder="请输入10米折返跑成绩" autocomplete="off" class="layui-input" min="0">
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label for="jump" class="layui-form-label">立定跳远（cm）：</label>
+                                <div class="layui-input-block">
+                                    <input type="number" id="jump" name="jump" required  lay-verify="required"
+                                           placeholder="请输入10米折返跑成绩" autocomplete="off" class="layui-input" min="0">
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label for="tennisThrow" class="layui-form-label">网球投掷（m）：</label>
+                                <div class="layui-input-block">
+                                    <input type="number" id="tennisThrow" name="tennisThrow" required  lay-verify="required"
+                                           placeholder="请输入网球投掷成绩" autocomplete="off" class="layui-input" min="0">
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label for="doubleJump" class="layui-form-label">双脚连续跳（s）：</label>
+                                <div class="layui-input-block">
+                                    <input type="number" id="doubleJump" name="doubleJump" required  lay-verify="required"
+                                           placeholder="请输入双脚连续跳成绩" autocomplete="off" class="layui-input" min="0">
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label for="sittingForward" class="layui-form-label">坐位体前屈（cm）：</label>
+                                <div class="layui-input-block">
+                                    <input type="number" id="sittingForward" name="sittingForward" required  lay-verify="required"
+                                           placeholder="请输入坐位体前屈成绩" autocomplete="off" class="layui-input">
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label for="balanceBeam" class="layui-form-label">走平衡木（s）：</label>
+                                <div class="layui-input-block">
+                                    <input type="number" id="balanceBeam" name="balanceBeam" required  lay-verify="required"
+                                           placeholder="请输入走平衡木成绩" autocomplete="off" class="layui-input" min="0">
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <div class="layui-input-block">
+                                    <button class="layui-btn" lay-submit lay-filter="formDemo">提交</button>
+                                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                                </div>
                             </div>
                         </form>
                     </div>
@@ -148,8 +219,16 @@
     <script src="/assets/vendor/responsive-tabs/js/jquery.responsiveTabs.min.js"></script>
     <!--Custom JS-->
     <script src="/assets/js/app.js"></script>
+
+    <script src="/layui/layui.js"></script>
+    <script src="/layui/layui.all.js"></script>
     <script>
         new WOW().init();
+
+        layui.use('form', function(){
+            var form = layui.form
+            form.render();
+        })
     </script>
 </body>
 
