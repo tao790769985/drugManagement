@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa7571fc-f283-4960-b679-af2db0f048d7" name="Default Changelist" comment="医药管理 项目初始">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_23.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_22.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drugManagement.iml" beforeDir="false" afterPath="$PROJECT_DIR$/drugManagement.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kyle/utils/ResultInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kyle/utils/ResultInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,17 +73,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="drugManagement" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.kyle.MainApplication" />
@@ -129,7 +119,8 @@
       <workItem from="1614050703923" duration="1910000" />
       <workItem from="1614054603320" duration="2318000" />
       <workItem from="1614058305329" duration="71000" />
-      <workItem from="1614058512108" duration="10732000" />
+      <workItem from="1614058512108" duration="12375000" />
+      <workItem from="1614130793088" duration="2621000" />
     </task>
     <task id="LOCAL-00003" summary="体测表单">
       <created>1612886855620</created>
@@ -166,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614076222585</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="医药管理 项目初始">
+      <created>1614077497485</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1614077497485</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -10,7 +10,7 @@ import java.io.Serializable;
 @Data
 public class ResultInfo implements Serializable {
 
-    // 状态码
+    // 状态码 1 成功  0 失败
     private Integer code;
     // 消息
     private String message;
